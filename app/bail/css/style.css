@@ -1,0 +1,609 @@
+
+.container {
+    display: flex;  
+    margin-left: 13%
+    
+   
+}
+
+.left-column {
+    flex: 2; /* Plus grande colonne */
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top:5%;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+/* Style pour la colonne du texte */
+.right-column {
+    flex: 2; /* Plus petite colonne */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.radio-button {
+    display: none;
+}
+
+/* Style des labels des boutons radio */
+.radio-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Style pour les boutons radio cochés */
+.radio-button:checked + .radio-label {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+}
+
+/* Style des boutons div */
+.button {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-left:5%;
+    margin-top: 2%;
+}
+
+.btn-pro {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border: none;
+    cursor: pointer;
+  
+}
+
+.btn-pro:hover {
+    color: #a896d8;
+}
+
+/* Style pour le bouton div sélectionné */
+.button.selected {
+    background-color: #a896d8;
+    color: #fff;
+}
+
+.rounded-div {
+
+    border-radius: 20px; /* Ajustez cette valeur pour changer le degré d'arrondi */
+    color: #fff;
+    text-align: center;
+
+    font-size: 18px;
+}
+
+h1 {
+    font-size:20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+.menu li {
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:5%;
+    margin-left: 1%;
+    align-items: center;
+    color: black;
+}
+
+.menu li.active {
+    background-color: #a896d8;
+    color: black;
+}
+
+/* Style pour le bouton Suivant et Précédent */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a896d8;
+}
+
+.next-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Réinitialisation des styles par défaut pour supprimer les marges et les espaces */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style pour chaque conteneur d'entrées */
+.input-container {
+    display: inline-block;
+    margin-right: 20px; /* Ajustez la marge entre les conteneurs selon vos besoins */
+    text-align: center; /* Alignez le texte au centre horizontalement */
+    flex: 1;
+}
+
+.wrapper {
+    border: solid;
+    background-color: white;
+}
+/* Style des labels pour les rendre plus visibles */
+label {
+    font-weight: bold;
+    display: block; /* Placez les labels sur une ligne séparée */
+    text-align: left;
+}
+
+/* Style des entrées pour les aligner horizontalement */
+input {
+    width: 200px; /* Ajustez la largeur en fonction de vos besoins */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: left; /* Alignez le texte au centre horizontalement */
+}
+
+span {
+    margin-top: 5px; /* Ajoutez un espacement entre l'input et le span */
+    color: #999; /* Couleur du texte du span (modifiable) */
+}
+
+/* Style de base pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Style pour les en-têtes de colonne */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Style pour les lignes impaires */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Style pour les lignes paires */
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+    cursor: pointer; /* Définir un curseur au survol des cellules */
+}
+
+/* Classe pour mettre en évidence */
+.highlighted {
+    background-color: #a896d8; /* Couleur de mise en évidence */
+}
+
+tbody td:hover {
+    background-color: #f2f2f2; /* Couleur de fond au survol */
+}
+
+.expandable {
+    background-color: #f2f2f2;
+    padding: 10px;
+    cursor: pointer;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+/* Styles pour les éléments contenus dans .file-upload-container */
+.file-upload-container {
+    /* Styles pour le conteneur principal */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styles pour les titres contenus dans .file-upload-container */
+.file-upload-container h1, .file-upload-container h2, .file-upload-container h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles pour les liens contenus dans .file-upload-container */
+.file-upload-container a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.file-upload-container a:hover {
+    color: #0056b3;
+}
+
+/* Styles pour les boutons contenus dans .file-upload-container */
+.file-upload-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-upload-container .button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les formulaires contenus dans .file-upload-container */
+.file-upload-container .form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styles pour le conteneur principal */
+.file-upload-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le label */
+.file-upload-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le champ de fichier */
+.file-upload-container input[type="file"] {
+    display: none;
+}
+
+/* Styles pour le bouton "Ajouter le fichier" */
+.file-upload-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-upload-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la liste de fichiers */
+#fileList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles pour les éléments de liste */
+#fileList li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles pour la liste déroulante */
+.file-upload-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styles pour les options de la liste déroulante */
+.file-upload-container select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.espace{
+    margin-top:2%;
+}
+
+.custom-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .custom-file-input {
+    display: none; /* Pour cacher le champ d'entrée de fichier par défaut */
+  }
+  
+  .custom-file-label {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Styling lorsque l'input de fichier est survolé */
+  .custom-file-input:hover + .custom-file-label {
+    background-color: #2c3e50;
+  }
+  
+  /* Styling lorsque l'input de fichier est actif (clic) */
+  .custom-file-input:active + .custom-file-label {
+    background-color: #e74c3c;
+  }
+  
+  /* Styling lorsque l'input de fichier a un fichier sélectionné */
+  .custom-file-input:valid + .custom-file-label {
+    background-color: #27ae60;
+  }
+  
+  /* Styling lorsque l'input de fichier est désactivé (grisé) */
+  .custom-file-input:disabled + .custom-file-label {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+
+  .file-info {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .file-info p {
+    display: inline;
+    margin-right: 5px;
+  }
+
+  #addFile {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  #addFile h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  #addMyFile {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  #addMyFile:hover {
+    background-color: #2c3e50;
+  }
+
+  #typeFile {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #typeFile h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  #fileType {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Style pour les options du select */
+  #fileType option {
+    color: #333;
+    background-color: #fff;
+  }
+
+  /* Style pour les informations du fichier ajouté */
+.file-info {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  white-space: nowrap; /* Empêche le texte de se couper */
+}
+
+.file-info p {
+  margin: 0;
+}
+
+.file-info button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+.file-info button:hover {
+  background-color: #c0392b;
+}
+
+#div2_text p {
+    margin: 0; /* Supprime la marge extérieure (espacement) des paragraphes */
+    display: flex; /* Utilise un conteneur flex pour aligner le texte et le span sur la même ligne */
+    align-items: center; /* Centre verticalement le contenu du paragraphe */
+    font-size: 16px; /* Appliquez une taille de police uniforme aux paragraphes */
+    padding: 0;
+  }
+  
+  #div2_text p span {
+    margin-left: 5px; /* Ajoute un espace entre le texte et le span */
+    vertical-align: middle;
+    margin-top: -0.1%;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #resultList {
+    list-style-type: disc; /* Style de la puce de liste (disque plein) */
+    margin: 10px 0; /* Marge supérieure et inférieure de la liste */
+    padding: 0; /* Supprimez le remplissage de la liste */
+}
+
+#resultList li {
+    margin-left: 20px; /* Marge à gauche pour l'élément de liste */
+    font-size: 16px; /* Modifier la taille de police */
+}
+
+#resultLogementList {
+    list-style-type: disc; /* Style de la puce de liste (disque plein) */
+    margin: 10px 0; /* Marge supérieure et inférieure de la liste */
+    padding: 0; /* Supprimez le remplissage de la liste */
+}
+
+#resultLogementList li {
+    margin-left: 20px; /* Marge à gauche pour l'élément de liste */
+    font-size: 16px; /* Modifier la taille de police */
+}
+
+
+
+
+/*text*/
+
+#pConsistanceLogement p {
+    margin-bottom: 10px;
+}
+
+#pConsistanceLogement span {
+    margin-bottom: -10px;
+}
+
+.title {
+    margin-left: 20px; /* Vous pouvez ajuster la valeur selon vos besoins */
+    font-size: 16px;
+    font-weight: bold;
+    color: #6c5087;
+}
+
+#texte_section
+{
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.title_texte
+{
+    text-align: center;
+}
+
+.reponse_rec
+{
+    width: 10%;
+    text-align: center;
+    border: 1px blue solid
+}
+#Choix_modele_text_id
+{display: inline;}
+
+
+

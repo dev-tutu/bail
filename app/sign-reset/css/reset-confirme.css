@@ -1,0 +1,62 @@
+/* Réinitialisation de mot de passe CSS */
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style du conteneur du formulaire */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Style pour les champs de formulaire */
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour le bouton de réinitialisation */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+/* Style pour les messages de succès */
+.success-message {
+    color: #008000;
+    margin-top: 10px;
+}

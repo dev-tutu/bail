@@ -1,0 +1,28 @@
+.form-gap {
+    padding-top: 70px;
+}
+
+#custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%; /* Position verticale au centre de la page */
+  left: 50%; /* Position horizontale au centre de la page */
+  transform: translate(-50%, -50%); /* Centrage précis */
+  width: 300px; /* Largeur de la fenêtre */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Met la fenêtre au premier plan */
+}
+
+#custom-alert-ok {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
